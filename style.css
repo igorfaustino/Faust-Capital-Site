@@ -1,5 +1,19 @@
+.color1 {color: #642242;}
+.color2 {color: #852f4d;}
+.color3 {color: #b9455f;}
+.color4 {color: #ff6775;}
+.color5 {color: #ff998e;}
+
+.color1 {color: #59253a;}
+.color2 {color: #7c394d;}
+.color3 {color: #b15970;}
+.color4 {color: #f3849e;}
+.color5 {color: #f8b1ca;}
+
 body{
-    background-color: #431f30;
+    background: linear-gradient(-45deg, #240041, #59253a, #7c394d, #b15970);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
     max-width: 1200px;
@@ -172,12 +186,17 @@ footer{
     text-align: center;
 }
 
-.color1 {color: #642242;}
-.color2 {color: #852f4d;}
-.color3 {color: #b9455f;}
-.color4 {color: #ff6775;}
-.color5 {color: #ff998e;}
-
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 
 /* Mobile */
 @media screen and (max-width: 768px){
